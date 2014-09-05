@@ -31,7 +31,7 @@ event using a native time object, and the second with the `epoch_time`
 constructor:
 
 ```ruby
-> r.table_create('ev').run(conn)
+> r.table_create('events').run(conn)
 {"created"=>1}
 > r.table('events').insert(
     [{'id' => 0, 'timestamp' => Time.now},
